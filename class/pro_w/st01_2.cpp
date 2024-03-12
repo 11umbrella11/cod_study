@@ -16,6 +16,11 @@ int main() {
   getline(cin, addr);//getline이 string 라이브러리 안에 있음
   cout << "주소:"<<addr<<endl;
   
+  cout << "암호:";
+  //string pw;
+  char pw[12];
+  cin >>pw;
+  cout <<"입력한 암호는"<<pw<<endl;
 
   cout << "너비:";
   int width;
