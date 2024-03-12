@@ -17,8 +17,9 @@ int main() {
   cout << "면적은 " << area << "\n"; // 면적을 출력하고 한 줄 띈다.
     
   cout << "주소:";
-  char addr[20];
-  cin >> addr;
+  char addr[1200];
+  //cin >> addr;
+  cin.getline(addr, 1200, '\n');//필요한 크기만큼 늘려줌
   cout << "주소:"<<addr<<endl;
     /*  cout << "너비";
   int width;
