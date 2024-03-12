@@ -15,6 +15,11 @@ int main() {
   // 너비와 높이로 구성되는 사각형의 면적을 계산한다.
   int area = width*height;
   cout << "면적은 " << area << "\n"; // 면적을 출력하고 한 줄 띈다.
+    
+  cout << "주소:";
+  char addr[20];
+  cin >> addr;
+  cout << "주소:"<<addr<<endl;
     /*  cout << "너비";
   int width;
   cin >> width; // 키보드로부터 너비를 읽어 width 변수에 저장
