@@ -1,17 +1,24 @@
 #include <iostream>
 using namespace std;
 
-/*class Rectangle{
+class Rectangle{
 public:
 int width;
 int height;
 int getArea();
+Rectangle();
+Rectangle(int w, int h);
 };
 
 int Rectangle::getArea(){
   return width*height;
 }
-
+Rectangle::Rectangle(int w, int h):width(w), height(h){
+  
+}
+Rectangle::Rectangle(){
+  
+}
 int main(){
   Rectangle rect1, rect2;
   rect1.width =3;
@@ -22,21 +29,24 @@ int main(){
   rect2.width =6;
   rect2.height = 7;
   int area1=rect1.getArea();
-  int area2 =rect2.getArea();
+  int area2=rect2.getArea();
   cout <<"rect1:"<<area1<<endl;
   cout <<"rect2:"<<area2<<endl;
-}*/
-class Circle {
+  Rectangle rect3, rect4(10, 20);
+  cout<<"rect3"<<rect3.getArea()<<endl;
+  cout<<"rect4"<<rect4.getArea()<<endl;
+}
+/*class Circle {
 public:
   int radius;
   double getArea();
   Circle();
   Circle(int r);
 
-};
-Circle::Circle() : Circle(1) {
+};*/
+//Circle::Circle() : Circle(1) {
   //위임생성자: 코드 중복을 줄임
-}
+//}
 //클래스 구현부
 /*Circle::Circle() {
   radius=1;
@@ -44,7 +54,7 @@ Circle::Circle() : Circle(1) {
   //return 3.14*radius*radius;
 }*/
 
-Circle::Circle(int r){
+/*Circle::Circle(int r){
   radius=r;
   cout <<"반지름"<<radius<<"생성"<<endl;
 }
@@ -65,4 +75,4 @@ int main(){
   
   
 
-}
+}*/
