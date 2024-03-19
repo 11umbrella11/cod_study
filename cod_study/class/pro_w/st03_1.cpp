@@ -1,7 +1,32 @@
 #include <iostream>
 using namespace std;
 
-class Circle {
+class Rectangle{
+public:
+int width;
+int height;
+int getArea();
+};
+
+int Rectangle::getArea(){
+  return width*height;
+}
+
+int main(){
+  Rectangle rect1, rect2;
+  rect1.width =3;
+  rect1.height = 9;
+  //int area=rect1.getArea();
+  //cout <<"rect1:"<<area<<endl;
+  //Rectangle rect2;
+  rect2.width =6;
+  rect2.height = 7;
+  int area1=rect1.getArea();
+  int area2 =rect2.getArea();
+  cout <<"rect1:"<<area1<<endl;
+  cout <<"rect2:"<<area2<<endl;
+}
+/*class Circle {
 public:
   int radius;
   double getArea();
@@ -17,10 +42,10 @@ int main(){
   donut.radius=1;
   double area =donut.getArea();
   cout<<"donut:"<<area<<endl;
-  Circle pizza;//객체 pizza생성
+  Circle pizza;//객체 pizza
   pizza.radius=40;
   area=pizza.getArea();
   cout<<"pizza:"<<area<<endl;
   
 
-}
+}*/
