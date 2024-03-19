@@ -34,13 +34,15 @@ public:
   Circle(int r);
 
 };
-
+Circle::Circle() : Circle(1) {
+  //위임생성자: 코드 중복을 줄임
+}
 //클래스 구현부
-Circle::Circle(){
+/*Circle::Circle() {
   radius=1;
   cout <<"반지름"<<radius<<"생성"<<endl;
   //return 3.14*radius*radius;
-}
+}*/
 
 Circle::Circle(int r){
   radius=r;
