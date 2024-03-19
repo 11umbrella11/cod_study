@@ -72,7 +72,7 @@ int main(){
   //pizza.radius=40;
   area=pizza.getArea();
   cout<<"pizza:"<<area<<endl;
-  
+  ㅍㄹㅍㄴ
   
 
 }*/
