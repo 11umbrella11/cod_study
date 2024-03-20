@@ -2,7 +2,14 @@
 using namespace std; //std::생략 (::는 스코프 설정 연산자)
 
 int main(){
-    cout<<"hello world!"; //cout<<에서 <<는 컴파일러와 약속
-    cout<<"끝"<<endl;
+    //cout<<"hello world!"; //cout<<에서 <<는 컴파일러와 약속
+    //cout<<"끝"
+
+    int num =0 ;
+    cout<<"정수를 입력하시오:";
+    cin >> num;
+    cout<<"입력하신 정수는"<<num<<"입니다"<<endl;
+
+
     return 0;//프로그램 종료 
 }
