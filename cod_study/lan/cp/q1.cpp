@@ -30,7 +30,7 @@ int main(){
     int trd = 3;
     int frt = 9;
 
-    cout << "2+5="<<fst+scd<<"\n"<<endl;
+    cout << "2+5="<<fst+scd<<"\n"<<endl;// endl은 개행효과 = \n
     cout << "5-3="<<scd-trd<<"\n"<<endl;
     cout << "3*9="<<trd*frt<<"\n"<<endl;
     cout << "9/2="<<frt/fst<<"\n"<<endl;
