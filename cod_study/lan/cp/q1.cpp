@@ -5,11 +5,14 @@ int main(){
     //cout<<"hello world!"; //cout<<에서 <<는 컴파일러와 약속
     //cout<<"끝"
 
-    int num =0 ;
-    cout<<"정수를 입력하시오:";
-    cin >> num;
-    cout<<"입력하신 정수는"<<num<<"입니다"<<endl;
-
+    //int num =0 ;
+    //cout<<"정수를 입력하시오:";
+    //cin >> num;
+    //cout<<"입력하신 정수는"<<num<<"입니다"<<endl;
+    int fir =3;
+    int scd =8;
+    int sum =fir + scd;
+    cout<<"3+8="<<sum<<endl;
 
     return 0;//프로그램 종료 
 }
