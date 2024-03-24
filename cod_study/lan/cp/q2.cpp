@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//사칙연산 응용          
+/*
 int main(){
     int one=3;
     int two=5;
@@ -24,4 +26,20 @@ int main(){
     return 0;
 
     
+}*/
+//자료형 이해하기
+int main(){
+    char character = 'C';
+    int integer = 100;
+    double precision = 3.14159;
+    bool is_true = true;
+    string word = "HELLO WORLD";
+
+    cout <<"char: "<<character<<endl;
+    cout << "integer: "<<integer<<endl;
+    cout <<"double: "<<precision<<endl;
+    cout <<"bool: "<<is_true<<endl;
+    cout <<"string: "<<word<<endl;
+
+    return 0;
 }
