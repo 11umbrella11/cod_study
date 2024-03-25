@@ -2,7 +2,7 @@
 using namespace std;
 
 //사칙연산 응용          
-/*
+
 int main(){
     int one=3;
     int two=5;
@@ -23,12 +23,12 @@ int main(){
     cout << "re_sum1="<<sum1<<endl;
     cout<<"re_sum2="<<sum2<<endl;
 
-    return 0;
+    
 
     
-}*/
+
 //자료형 이해하기
-int main(){
+
     char character = 'C';
     int integer = 100;
     double precision = 3.14159;
