@@ -27,7 +27,7 @@ int main(){
 
     
 
-//자료형 이해하기
+//7.자료형 이해하기
 
     char character = 'C';
     int integer = 100;
@@ -41,6 +41,17 @@ int main(){
     cout <<"bool: "<<is_true<<endl;
     cout <<"string: "<<word<<endl;
 
+
+//8. 조건문(if~else)
+
+int x =10;
+int y = 1;
+
+if (x>y)
+    cout<<"x는 y보다 큽니다"<<endl;
+else
+    cout<<"x는 y보다 작습니다"<<endl;
+
     return 0;
-    //
+    
 }
