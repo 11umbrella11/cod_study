@@ -42,4 +42,5 @@ int main(){
     cout <<"string: "<<word<<endl;
 
     return 0;
+    //
 }
