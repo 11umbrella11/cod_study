@@ -44,24 +44,39 @@ int main(){
 
 //8. 조건문(if~else)
 
-int x =10;
-int y = 1;
+    int x =10;
+    int y = 1;
 
-if (x>y)
-    cout<<"x는 y보다 큽니다"<<endl;
-else
-    cout<<"x는 y보다 작습니다"<<endl;
+        if (x>y)
+            cout<<"x는 y보다 큽니다"<<endl;
+        else
+            cout<<"x는 y보다 작습니다"<<endl;
 
-//9.배열배우기
-const int kArraysize=3;//const: 상수, 사이즈 지정
-int founding[kArraysize];//선언
-founding[0]=918;
-founding[1]=1392;
-founding[2]=1948;
+//9.순환문 배우기
 
-cout<<"고려 건국 년도"<<founding[0]<<endl;
-cout<<"조선 건국 년도"<<founding[1]<<endl;
-cout<<"한국 건국 년도"<<founding[2]<<endl;
+    int s5= 0;
+    int s6= 0;
+
+    int one1 =1;
+    int two2=2;
+
+    for (int i =0;i<5;i++){
+        s5+=one1;
+        s6+=two2;
+
+    }
+    cout<<"합산결과-> sum1:"<<s5<<"sum2:"<<s6<<endl;
+
+//10. 배열배우기
+    const int kArraysize=3;//const: 상수, 사이즈 지정
+    int founding[kArraysize];//선언
+    founding[0]=918;
+    founding[1]=1392;
+    founding[2]=1948;
+
+    cout<<"고려 건국 년도"<<founding[0]<<endl;
+    cout<<"조선 건국 년도"<<founding[1]<<endl;
+    cout<<"한국 건국 년도"<<founding[2]<<endl;
 
     return 0;
     
