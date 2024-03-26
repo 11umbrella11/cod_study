@@ -25,3 +25,25 @@ namespace silla{
         cout<<"경상도"<<endl;
     }
 }
+
+namespace baekjae{
+    int year =660;
+    void CentralArea(){
+        cout<<"충청도"<<endl;
+    }
+}
+
+using namespace silla;
+using namespace baekjae;
+
+int main (){
+
+    cout<<"신라의 중심지: "<<endl;
+    silla::CentralArea();
+    cout<<"신라 멸망년도: "<<silla::year<<endl;
+    cout<<"백제의 중심지: "<<endl;
+    baekjae::CentralArea();
+    cout<<"백제 멸망년도: "<<baekjae::year<<endl;
+
+    return 0;
+}
