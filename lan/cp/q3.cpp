@@ -57,6 +57,8 @@ int main(){
     exam.push_back(20);
     exam.push_back(30);
 
-    for (int i=0; )
+    for (int i=0, size =exam.size(); i<size();i++){
+        
+    }
 }
 
