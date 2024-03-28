@@ -19,7 +19,7 @@ int main(){
 
 //13.네임스페이스 배우기
 
-namespace silla{
+/*namespace silla{
     int year =935;
     void CentralArea(){
         cout<<"경상도"<<endl;
@@ -44,6 +44,19 @@ int main (){
     cout<<"백제의 중심지: "<<endl;
     baekjae::CentralArea();
     cout<<"백제 멸망년도: "<<baekjae::year<<endl;
-
+ 
     return 0;
+}*/
+
+//14. #include배우기
+#include <vector>
+
+int main(){
+    vector<int> exam;
+    exam.push_back(10);
+    exam.push_back(20);
+    exam.push_back(30);
+
+    for (int i=0; )
 }
+
