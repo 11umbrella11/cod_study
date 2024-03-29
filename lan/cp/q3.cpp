@@ -49,16 +49,18 @@ int main (){
 }*/
 
 //14. #include배우기
-#include <vector>
+#include <vector>//표준 라이브러리 안에있는 파일이므로 <>로 엮음
 
 int main(){
-    vector<int> exam;
-    exam.push_back(10);
+    vector<int> exam;//정수형 데이터를 저장할 exam이라는 벡터 생성
+    exam.push_back(10);//벡터뒤에 10을 넣음
     exam.push_back(20);
     exam.push_back(30);
 
-    for (int i=0, size =exam.size(); i<size();i++){
-        
+    for (int i=0, size=exam.size(); i<size;i++){
+        cout<<"벡터값: "<<exam.at(i)<<endl;
     }
+    return 0;
+    
 }
 
