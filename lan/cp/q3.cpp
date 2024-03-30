@@ -49,7 +49,7 @@ int main (){
 }*/
 
 //14. #include배우기
-#include <vector>//표준 라이브러리 안에있는 파일이므로 <>로 엮음
+/*#include <vector>//표준 라이브러리 안에있는 파일이므로 <>로 엮음
 
 int main(){
     vector<int> exam;//정수형 데이터를 저장할 exam이라는 벡터 생성
@@ -59,8 +59,28 @@ int main(){
 
     for (int i=0, size=exam.size(); i<size;i++){
         cout<<"벡터값: "<<exam.at(i)<<endl;
+
     }
     return 0;
     
+}*/
+//15. 스코핑 룰 이해하기
+int x = 10;
+
+int Func1(){
+    int y = x+10;
+    return y;
 }
 
+int Func2(){
+    int x=100;
+    return x;
+}
+
+int main(){
+
+    cout<<"y = "<<Func1()<<endl;
+    cout<<"x = "<<Func2()<<endl;
+    cout<<"x = "<<x<<endl;
+    return 0;
+}
