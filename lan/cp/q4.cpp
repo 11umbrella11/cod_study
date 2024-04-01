@@ -18,8 +18,9 @@ int main(){
     return 0;
 }   */
 
-//17. 문자열형 변수 찾기
+//17. 문자열형 변수 찾기(str)
 
+/*
 #include<string>//문자열 라이브러리 (이는 c언어의 char과 유사)
 
 int main(){
@@ -29,9 +30,24 @@ int main(){
     cout<<"Country :"<<my_country<<endl;
     cout<<"job: "<<my_job<<endl;
 
-    string my_info = my_country+","+my_job;
+    string my_info = my_country+","+my_job;//문자 열 합치기
 
     cout <<"My Info: "<<my_info<<endl;
 
     return 0;
+}*/
+
+//18. 정수형 번수 이해하기(int)
+
+int main(){
+    int positive = 100;
+    int negative = -200;
+    int ascii_value = 'a';
+
+    cout<<"양수:"<<positive<<endl;
+    cout<<"음수:"<<negative<<endl;
+    cout<<"아스키코드:"<<ascii_value<<endl;
+
+    return 0;
+    
 }
