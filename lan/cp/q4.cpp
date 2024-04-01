@@ -54,7 +54,7 @@ int main(){
 */
 
 //19. 실수형 변수 이해하기(double)
-
+/*
 int main(){
     double pi_d=3.14;
     float pi_f=3.14f;
@@ -63,4 +63,21 @@ int main(){
     cout<<"pi_f: "<<pi_f<<endl;//float의 경우에는 f를 붙이지않으면 오류남 C4305
 
     return 0;
+}
+*/
+
+//20. 논리형 변수 이해하기(bool)
+int main(){
+    int x = 10;
+    int y = 6;
+
+    bool is_true = false;
+
+    if(x>y){
+        is_true = true;
+    }
+    else { is_true = false;}
+
+    if(is_true==true) {cout<<"x>y;x는 y보다 큽니다."<<endl;}
+    else{cout<<"x<y;x는 y보다 작습니다."<<endl;}
 }
