@@ -38,7 +38,7 @@ int main(){
 }*/
 
 //18. 정수형 번수 이해하기(int)
-
+/*
 int main(){
     int positive = 100;
     int negative = -200;
@@ -49,5 +49,18 @@ int main(){
     cout<<"아스키코드:"<<ascii_value<<endl;
 
     return 0;
-    
+
+}
+*/
+
+//19. 실수형 변수 이해하기(double)
+
+int main(){
+    double pi_d=3.14;
+    float pi_f=3.14f;
+
+    cout<<"pi_d: "<<pi_d<<endl;
+    cout<<"pi_f: "<<pi_f<<endl;//float의 경우에는 f를 붙이지않으면 오류남 C4305
+
+    return 0;
 }
