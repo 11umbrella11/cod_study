@@ -71,4 +71,11 @@ int main(){
     else cout <<"두 문장은 같습니다"<<endl;
 
     if (x>=y) cout <<"x는 y보다 크거나 같습니다."<<endl;
+    else cout <<"x는 y보다 작거나 같지않습니다."<<endl;
+
+    if (x<=y) cout <<"x는 y보다 작거나 같습니다."<<endl;
+    else cout <<"x는 y보다 크거나 같지않습니다."<<endl;
+
+    return 0;
+
 }
