@@ -56,7 +56,7 @@ int main(){
 */
 
 //24.관계연산자 이해하기
-
+/*
 #include<string>
 
 int main(){
@@ -75,6 +75,39 @@ int main(){
 
     if (x<=y) cout <<"x는 y보다 작거나 같습니다."<<endl;
     else cout <<"x는 y보다 크거나 같지않습니다."<<endl;
+
+    return 0;
+
+}
+*/
+
+//25.논리연산자 이해하기
+
+int main(){
+
+    int x = 10;
+    int y = 20;
+
+    bool is_x = true;
+    bool is_y = false;
+    //error: lvalue required as left operand of assignment
+    //왼쪽의 피연산자의 값이 잘못되었다.
+    //히단의 조건식에 =true/false를 입력해서 그럼
+
+    if (is_x && is_y ) // AND 개념, 
+        cout<<"is_x && is_y = "<<"true"<<endl;
+    else
+        cout<<"is_x && is_y = "<<"false"<<endl;
+
+    if (x==10|| is_x )//OR개념
+        cout<<"x가 10이거나 is_x는 참이다"<<endl;
+    else
+        cout<<"x가 10이 아니거나 is_x는 거짓이다"<<endl;
+
+    if(!is_y)
+        cout<<"is_y의 원래값은 false입니다."<<endl;
+    else
+        cout<<"is_y의 원래값은 false입니다."<<endl;
 
     return 0;
 
