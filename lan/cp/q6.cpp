@@ -72,7 +72,7 @@ bit2>>1 :00010000,16
 */
 
 //29. 캐스트 연산자 이해하기(static_cast)
-
+/*
 int main(){
 
     int x = 2;
@@ -87,7 +87,7 @@ int main(){
     cout << "4.4/2 = "<<k<<endl;
 
     return 0;
-}
+}*/
 //static_cast<>: 기본적인 cast
 //dynamic_cast<>: 객체지향언어의 다형성을 이용하여 모호한 타입의 캐스트오류를 막아줌
 //const_cast: 자료혀이 갖고있는 상수속성을 제거
@@ -97,4 +97,35 @@ int main(){
 4.4/2 = (static_cast<int>)2
 4.4/2 = (int)2
 4.4/2 = 2.2
+*/
+
+//30. 명시적 변환 이해하기->static cast를 이용하지않고 명시적으로 자료형을 변경하는 방법
+
+int main(){
+
+    int number1 = 65;
+    double number2 = 23.4;
+
+    int number3 = int(number2);//()안에 넣어 명시작으로 double을 int로 변경
+    double number4 = double(number1/number2);//double로 변환
+
+    char ch = char(number1);//아스키코드로 변환
+
+    cout<<"number1: "<<number1<<endl;
+    cout<<"number2: "<<number2<<endl;
+    cout<<"number3: "<<number3<<endl;
+    cout<<"number4: "<<number4<<endl;
+    cout<<"ch: "<<ch<<endl;
+
+    return 0;
+
+}
+
+//결과 
+/*
+number1: 65
+number2: 23.4
+number3: 23
+number4: 2.77778
+ch: A
 */
