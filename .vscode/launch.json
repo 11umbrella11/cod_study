@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/choeeunjeong/Desktop/cod_study/lan/cp",
-      "program": "/Users/choeeunjeong/Desktop/cod_study/lan/cp/build/Debug/outDebug"
+      "cwd": "/Users/choeeunjeong/Desktop/cod_study/class/pro_w/st05_2",
+      "program": "/Users/choeeunjeong/Desktop/cod_study/class/pro_w/st05_2/build/Debug/outDebug"
     }
   ]
 }
