@@ -1,7 +1,7 @@
 #include<iostream>
 #include"MyIntStack.h"
 
-void MyIntStack::MyIntStack(){
+MyIntStack::MyIntStack(){
     int tos =0;//reset
 };
 
@@ -16,7 +16,7 @@ bool MyIntStack::push(int n){
     return true;
 }; // 정수 n 푸시. 꽉 차 있으면 false, 아니면 true 리턴
 bool MyIntStack::pop(int &n){
-    if(tos==o){
+    if(tos==0){
         //stack empty
          return false;
 
