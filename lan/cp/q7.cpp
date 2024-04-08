@@ -70,7 +70,7 @@ number2는 6입니다.
 */
 
 //33.중첩 조건믄으로 가장 큰 수 찾기
-
+/*
 #include<string>
 
 int main(){
@@ -88,4 +88,54 @@ int main(){
         cout<<"찾을 수 없습니다."<<endl;
 
         return 0;
-}
+}*/
+//결과
+//가장 큰 수 number3: 300
+
+//34.중첩 순환문 이해하기
+/*
+int main(){
+    int number = 7;
+
+    for(int i=0; i<10; i++) 
+    {
+        if (i%3 ==0)continue;//3의 배수일 경우에는 i++만 하고 넘어감
+        else if (i==number) break;//해당 루프 종료
+        else cout<<"현재 i값:"<<i<<endl;
+    }
+    return 0;
+}*/
+/*
+결과값
+
+현재 i값:1
+현재 i값:2
+현재 i값:4
+현재 i값:5*/
+
+//35. 순환문으로 특정 문자개수 구하기
+/*
+#include<string>
+
+int main(){
+
+    string str ="Thr Jin State was formed in southern korea by the 3th century BC";
+    //찾을 기본 문장
+    char find = 'a';//찾을 문자
+
+    int size = str.size();//문자열의 크기만큼 반복해야 하므로
+    int count=0;// 찾는 단어의 갯수 카운트
+
+    for(int i =0; i < size;i++){
+        if(str[i]==find) count++; 
+    }
+    cout<<"문장의 a갯수는 "<<count<<"개 입니다"<<endl;
+
+    return 0;
+}*/
+/*
+결과값
+
+문장의 a갯수는 3개 입니다
+*/
+
