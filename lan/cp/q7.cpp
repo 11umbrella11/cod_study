@@ -31,7 +31,7 @@ double크기:8
 */
 
 //32. 중첩조건문
-int main(){
+/*int main(){
     int number1 = 100;
     int number2 = 6;
 
@@ -45,7 +45,7 @@ int main(){
     if (number2<7){
         if(number2>3){
             if(number2 == 4)
-            cout<<"number2는 4입니다"<endl;
+            cout<<"number2는 4입니다"<<endl;
             else if(number2 == 5)
                 cout<<"number2는 5입니다."<<endl;
             else
@@ -53,7 +53,7 @@ int main(){
         }
         else{
             if(number2 == 3)
-            cout<<"number2는 3입니다"<endl;
+            cout<<"number2는 3입니다"<<endl;
             else if(number2 == 2)
                 cout<<"number2는 2입니다."<<endl;
             else
@@ -61,4 +61,31 @@ int main(){
         }
     }
     return 0;    
+}
+*/
+/*
+결과
+number1보다 number2가 더 작습니다.
+number2는 6입니다.
+*/
+
+//33.중첩 조건믄으로 가장 큰 수 찾기
+
+#include<string>
+
+int main(){
+    int number1 = 100;
+    int number2 = 200;
+    int number3 = 300;
+
+    if(number1>number2 && number1 > number3)
+        cout<<"가장 큰 수 number 1:"<<number1<<endl;
+    else if(number2>number1&&number2>number3)
+        cout<<"가장 큰 수 number2:"<<number2<<endl;
+    else if(number3>number1&&number3>number2)
+        cout<<"가장 큰 수 number3: "<<number3<<endl;
+    else
+        cout<<"찾을 수 없습니다."<<endl;
+
+        return 0;
 }
