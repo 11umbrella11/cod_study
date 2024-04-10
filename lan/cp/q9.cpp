@@ -43,7 +43,7 @@ int main(){
 */
 
 //42.피라미드 만들기~반복문
-
+/*
 int main(){
 int offset =4;//높이의 한도
     
@@ -62,4 +62,65 @@ int offset =4;//높이의 한도
             cout<<endl;
         }
     return 0;
+}
+*/
+/*
+    *
+   ***
+  *****
+ *******
+ */
+
+//43.실수, 소수점버리기(floor, ceil)
+//실수의 소수점을 무조건 버리는 함수: floor
+//실수의 소수점을 무조건 올리는 함수: ceil
+/*
+#include<cmath>
+int main(){
+cout<<"==========소수점 버리기=========="<<endl;
+cout<<"floor(1.4): "<<floor(1.4)<<endl;
+cout<<"floor(3.8): "<<floor(3.8)<<endl;
+cout<<"floor(13.2): "<<floor(13.92)<<endl;
+cout<<"floor(54.1): "<<floor(52.33)<<endl;
+cout<<"floor(100.7): "<<floor(100.7)<<endl;
+
+cout<<"==========소수점 올리기=========="<<endl;
+cout<<"ceil(3.2): "<<ceil(3.2)<<endl;
+cout<<"ceil(8.2): "<<ceil(8.2)<<endl;
+cout<<"ceil(19.3): "<<ceil(19.32)<<endl;
+cout<<"ceil(49.5): "<<ceil(49.25)<<endl;
+cout<<"ceil(99.7): "<<ceil(99.27)<<endl;
+
+return 0;
+}
+*/
+
+//44. 실수 반올림하기
+//실수를 반올림하는 함수 :round
+/*int main(){
+    cout<<"round(1.9): "<<round(1.9)<<endl;
+    cout<<"round(-2.6): "<<round(-2.6)<<endl;
+    cout<<"round(38.1): "<<round(38.1)<<endl;
+    cout<<"round(-72.5): "<<round(-72.5)<<endl;
+    cout<<"round(100.3): "<<round(100.3)<<endl;
+
+    return 0;
+
+}*/
+
+//45.절댓값과 제곱수 구하기(abs, fabs, pow)
+#include<cmath>
+int main(){
+    cout<<"===절대값 구하기===="<<endl;
+    cout<<"-10의 절대값"<<abs(-10)<<endl;//정수의 절대값
+    cout<<"-5.42의 절대값"<fabs(5.72)<<endl;//실수의 절대값
+
+    cout<<"==제곱수 구하기=="<<endl;
+    cout<<"2의 2승: "<<pow(2,2)<<endl;
+    cout<<"3의 4승: "<<pow(3,4)<<endl;
+    cout<<"4의 6승: "<<pow(4,6)<<endl;
+    cout<<"8의 3승: "<<pow(8,3)<<endl;
+    
+    return 0;
+
 }
