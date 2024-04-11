@@ -8,8 +8,8 @@ int main(){
     time_t now = time(NULL);//날짜와 시간을 얻을 수 있는 time_t변수를 선언(비어있는)
     tm* ptm = localtime(&now);//tm은 구조체로 localtime()함수를 이용해서 int날짜와 시간값을 대입
 
-    char buffer[64];
-    strftime(buffer, 64, "예제 만드는 지금은 %Y년 %m월 %d일, %H시 %M분 %S초입니다.(%p)\n",ptm);
+    char buffer[90];
+    strftime(buffer, 90, "예제 만드는 지금은 %Y년 %m월 %d일, %H시 %M분 %S초입니다.(%p)\n",ptm);
     //3번쨰 문장의 문자열에 2번쨰인자의 크기만큼 1번째 배열(buffer)에 할당하는 하는 역할
     cout<<buffer;
 

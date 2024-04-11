@@ -113,7 +113,7 @@ return 0;
 int main(){
     cout<<"===절대값 구하기===="<<endl;
     cout<<"-10의 절대값"<<abs(-10)<<endl;//정수의 절대값
-    cout<<"-5.42의 절대값"<fabs(5.72)<<endl;//실수의 절대값
+    cout<<"-5.42의 절대값"<<fabs(5.72)<<endl;//실수의 절대값
 
     cout<<"==제곱수 구하기=="<<endl;
     cout<<"2의 2승: "<<pow(2,2)<<endl;
