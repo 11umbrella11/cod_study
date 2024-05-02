@@ -115,3 +115,14 @@ int main(){
 //65. 문자열 정렬하기
 
 #include <string>
+#include <string>
+
+using namespace std;
+
+int main(){
+    string sort_str1="gojoseon";
+    string sort_str2="abcdeABCDE";
+
+    sort(sort_str1.begin(), sort_str1.end());
+    sort(sort_str2.begin(), sort_str2.end());
+}
