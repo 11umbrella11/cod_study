@@ -5,10 +5,11 @@
 
 class shape{
     public:
-    virtual void draw(){
+    /*virtual void draw(){
         cout<<"Shape::draw()"<<endl;
 
-    }
+    }*/
+    
     void  paint(){
         draw();
     }

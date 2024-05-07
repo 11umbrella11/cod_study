@@ -4,9 +4,12 @@
 using namespace std;
 
 int main(){
-    Shape *pShape=new Shape();
+    /*Shape *pShape=new Shape();
     pShape->paint();
-    delete pShape;
+    delete pShape;*/
+    
+    Shape *pShape;
+    
     pShape=new Circle();
     pShape->paint;
     delete pShape;
