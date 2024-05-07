@@ -7,4 +7,4 @@ class Line::public Shape {
     visual void Line(){
       cout<<"Line::draw"<<endl;
     }
-}
+}git git 
