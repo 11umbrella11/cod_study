@@ -8,4 +8,7 @@ class Rect : public Shape{
         cout<<"Rect::draw()"<<endl;
 
     }
+    ~Rect(){
+        cout<<"Rect::소멸자"<<endl;
+    }
 }
