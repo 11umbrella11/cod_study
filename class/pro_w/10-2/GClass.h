@@ -8,7 +8,8 @@ public:
     Gclass();
     void set(T1 a,T2 b);
     void get(T1& a, T2& b);
-    }
+    };
+    #endif
 
 template <class T1, class T2>
 GClass<T1,T2>::GClass(){
