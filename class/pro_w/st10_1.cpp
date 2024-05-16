@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-template <typename T>
+template <typename T1, typename T2>//typename이든 class든 같다.
 
-void mySwap(T& a, T&b){
-    T tmp;
+void mySwap(T1& a, T2& b){
+    T1 tmp;
     tmp =a;
     a=b;
     b=tmp;
@@ -14,8 +14,9 @@ class Circle{
     int radius;
 public:
 Circle(int radius=1){
-    this->radius
+    this->radius=radius;
 }
+int getRadius {return radius;}
 }
 int main(){
     int a=3, b=5;
@@ -26,7 +27,7 @@ int main(){
     mySwap(c,d);
     cout<<"c=<<c<<",d="<<d<<endl;
     
-    Circle donut(5),pizza(20);
+    Circle donut(5),pizza(20);//다른타입의 경우 에러가 남
     mySwap(donut,pizza)"
     cout<<"donut="<<donut<<",pizza="<<pizza<<endl;
     }
