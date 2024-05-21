@@ -19,7 +19,10 @@ int main(){
         if(eng=="exit")
         break;
     }
-
+    if(dic.find(eng) ==dic.end())
+        //없으면 츨력됨
+        cout<<"없음"<<endl;
+        
     cout<<dic[ eng ]<<endl;
 
 }
