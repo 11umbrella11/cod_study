@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+$include<algorithm>
 using namespace std;
 
 void printvector(vector<int> &v){
@@ -26,9 +27,18 @@ int main(){
         cin>>num;
         if(num==0) break;
         v.push_back(num);
+//printVector
+for_each(v.begin(),v.end(),[](int n){cout<<' ';});//printVector와 같이 작동함
+cout<<endl;
+//getAvg
+int sum=0;
+for_each(v.begin(),v.end(), [&sum](int n){ sum+=n;});
+cout<<"평균: "<<(double)sum/v.size()<<endl;
+
+
         printVector(v);
         cout<<"평균:"<<getAvg<<endl;
-        
+
 
     }
 
