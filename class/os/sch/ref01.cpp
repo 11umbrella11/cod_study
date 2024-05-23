@@ -1,41 +1,37 @@
-#include<bits/stdc++.h>
-//https://www.tutorialspoint.com/task-scheduler-n-cplusplus
+#include<iostream>
 using namespace std;
-class Solution {
-   public:
-   int leastInterval(vector<char>& t, int n) {
-      map <char,int> m;
-      for(int i =0;i<t.size();i++){
-         m[t[i]]++;
-      }
-      map <char, int> :: iterator i = m.begin();
-      priority_queue <int> pq;
-      while(i != m.end()){
-         pq.push(i->second);
-         i++;
-      }
-      int ans = 0;
-      int cycle = n + 1;
-      while(!pq.empty()){
-         vector <int> temp;
-         int time = 0;
-         for(int i = 0; !pq.empty() && i < cycle; i++){
-            temp.push_back(pq.top());
-            pq.pop();
-            time++;
-         }
-         for(int i = 0;i < temp.size(); i++){
-            temp[i]-- ;
-           
-            if(temp[i])pq.push(temp[i]);
-         }
-         ans += pq.empty()? time : cycle;
-      }
-      return ans;
-   }
-};
-int main(){
-   vector<char> v = {'A','A','A','B','B','B'};
-   Solution ob;
-   cout << (ob.leastInterval(v, 2)) ;
+int main()
+{   int n,bt[20],wt[20],tat[20],avwt=0,avtat=0,i,j;
+    cout<<"Enter total number of processes(maximum 20):";
+    cin>>n;
+ 
+    cout<<"\nEnter Process Burst Time aka DURATION \n";
+    for(i=0;i<n;i++)
+    {
+        cout<<"P["<<i+1<<"]:";
+        cin>>bt[i];
+    }
+    wt[0]=0;    //waiting time for first process is 0
+    //calculating waiting time
+    for(i=1;i<n;i++)
+    {
+        wt[i]=0;
+        for(j=0;j<i;j++)
+            wt[i]+=bt[j];
+    }
+    cout<<"\nProcess\t\tBurst Time\tWaiting Time\tTurnaround Time";
+    //calculating turnaround time
+    for(i=0;i<n;i++)
+    {
+        tat[i]=bt[i]+wt[i];
+        avwt+=wt[i];
+        avtat+=tat[i];
+        cout<<"\nP["<<i+1<<"]"<<"\t\t"<<bt[i]<<"\t\t"<<wt[i]<<"\t\t"<<tat[i];
+    }
+    avwt/=i;
+    avtat/=i;
+    cout<<"\n\nAverage Waiting Time:"<<avwt;
+    cout<<"\nAverage Turnaround Time:"<<avtat;
+ 
+    return 0;
 }
