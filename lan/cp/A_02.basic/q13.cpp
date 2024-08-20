@@ -59,7 +59,7 @@ int main(){
 
     }
 */
-/*
+
 
 
 
@@ -114,15 +114,24 @@ int main(){
 
 //65. 문자열 정렬하기
 
-#include <string>
+#include <iostream>
 #include <string>
 
 using namespace std;
 
-int main(){
+int main()
+{
     string sort_str1="gojoseon";
     string sort_str2="abcdeABCDE";
 
     sort(sort_str1.begin(), sort_str1.end());
     sort(sort_str2.begin(), sort_str2.end());
+
+    cout<<"소문자만 정렬: " <<sort_str1<<endl;
+    cout<<"대소문자만 정렬: "<<sort_str2<<endl;
+
+    return 0;
 }
+//<출력>
+//소문자만 정렬: egjnooos
+//대소문자만 정렬: ABCDEabcde

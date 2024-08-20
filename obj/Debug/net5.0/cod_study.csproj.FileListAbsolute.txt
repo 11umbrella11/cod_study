@@ -1,0 +1,5 @@
+/Users/choeeunjeong/Desktop/cod_study/obj/Debug/net5.0/cod_study.csproj.AssemblyReference.cache
+/Users/choeeunjeong/Desktop/cod_study/obj/Debug/net5.0/cod_study.GeneratedMSBuildEditorConfig.editorconfig
+/Users/choeeunjeong/Desktop/cod_study/obj/Debug/net5.0/cod_study.AssemblyInfoInputs.cache
+/Users/choeeunjeong/Desktop/cod_study/obj/Debug/net5.0/cod_study.AssemblyInfo.cs
+/Users/choeeunjeong/Desktop/cod_study/obj/Debug/net5.0/cod_study.csproj.CoreCompileInputs.cache

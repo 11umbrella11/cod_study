@@ -33,3 +33,22 @@ int main() {
     cout << endl << "스택의 현재 크기 : " << mStack.length() << endl;
     }
 }
+
+size_t prev_cap = m_capacity;
+    if (m_capacity < DEFAULT_CAP)
+      m_capacity = DEFAULT_CAP;
+    else
+      m_capacity *= 2;
+    T *t_arr = new T[m_capacity];
+    for (size_t i = 0; i < m_size; i++)
+      t_arr[i] = arr[(head + i) % prev_cap];
+    head = 0;
+    tail = m_size;
+    delete[] arr;
+    arr = t_arr;
+  }
+    if(m_size >= m_capacity)
+      increaseCapacity();
+    arr[tail] = val;
+    tail = (tail + 1) % m_capacity;
+    m_size++;
