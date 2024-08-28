@@ -51,7 +51,7 @@ number2: 34.2
 */
 
 //68. 정수와 문자의 최소/최대값 알아내기
-
+/*
 #include<iostream>
 #include<string>
 #include<algorithm>
@@ -72,7 +72,7 @@ int main(){
     return 0;
 
 }
-
+*/
 
 //69. 포인터 이해하기
 /*
@@ -106,17 +106,17 @@ pointer2=0x7ff7b9c822c8(size=8)
 */
 
 //70. 포인터 변수 사용하기
-/*
+
 #include <iostream>
 #include <string>
 #include <vector>
-
+//vector: 메모리를 할당하여 사용. 블록 밖으로 나가거나 return을 만나면 자동으로 메모리 해제
 using namespace std;
 
 int PointerFunc(vector<string> *info){
 //함수선언~인자의 자료형: vector<string>
 //함수의 인자로 전달받은 벡터의 크기를 조회해, 비어있다면 0출력 아니면 벡터의 사이즈 출력
-    if (info->empty() == true)
+    if (info->empty() == true)//->는 포인터 변수를 다루는 규칙
         return 0;
     else
         return sizeof(info);
@@ -125,13 +125,21 @@ int PointerFunc(vector<string> *info){
 int main(){
     vector<string> message;
     message.push_back("고려장군");
-    //message.push_back("척준경");
-    //message.push_back("절친이름은");
-    //message.push_back("...무엇일까");
-
-    cout<<"포인터의 인자크기: "<<PointerFunc(&message)<<endl;
+    //push_back은 vector의 마지막에 새로운 원소를 추가하기위해 
+    //          임시객체를 하나 만들어서 거기에 값을 복사한 후 vector에 삽입. 삽입후 임시객체 삭제
+    message.push_back("김철수!");
+    message.push_back("절친이름은");
+    message.push_back("sfdnslnslncsd");
+    for(int i=0; i>3 ; i++){
+        cout<<message[i]<<endl;
+    }
+    //cout<<"메세지의 내용: "<<message<<endl;
+    cout<<"포인터: "<<&message<<"\n"<<"포인터의 인자크기: "<<PointerFunc(&message)<<endl;
+    //포인터는 문자+숫자로 8이 출력됨
     cout<<"원래 변수 크기: "<<sizeof(message)<<endl;
-
+    //sizeof는 타입의 크기, string문자열 4개
+    cout<<"할당 갯수: "<<message.size()<<endl;
+    //size()는 할당된 공간의 갯수
     return 0;
+
 }
-*/
