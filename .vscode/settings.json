@@ -63,6 +63,7 @@
     "stack": "cpp",
     "__locale": "cpp",
     "locale": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "stdio.h": "c"
   }
 }
