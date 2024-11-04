@@ -68,8 +68,15 @@ int main(){
     std::array<int, 5> arr6={5,2,3,1,7};
     std::cout<<std::endl;
     for(auto it=arr6.begin();it!=arr6.end();it++){
-        auto element = (*it);
+        //begin()과 end()는 해당배열의 맨앞, 맨끝의 원소의 위치를 지정
+        auto element =(*it);
         std::cout<<element<<" ";
     }
-
+    std::cout<<std::endl;
+    //front():배열의 첫 원소에대한 참조 반환
+    //back(): 배열의 끝 원소에대한 참조 반환
+    //data(): 배열 객체내부의 실제 데이터 메모리 버퍼를 가리키는 포인터를 반환
+    std::cout<<"맨앞 원소: "<<arr6.front()<<std::endl;
+    std::cout<<"맨뒤 원소: "<<arr6.back()<<std::endl;
+    std::cout<<"현재 메모리 버퍼가 가리키는 위치 다음 원소: "<<*(arr6.data()+1)<<std::endl;
 }
