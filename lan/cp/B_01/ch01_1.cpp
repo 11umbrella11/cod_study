@@ -19,6 +19,10 @@
 #include <iostream>
 #include <array>
 
+void print(std::array<int,5> arr){
+    for(auto ele : arr)
+        std::cout<<ele<<", ";
+}
 int main(){
 
     std::array<int,10> arr1;
@@ -33,4 +37,19 @@ int main(){
         std::cout<<arr2[i]<<" ";
 
     std::cout<<std::endl;
+
+    std::array<int, 4> arr3 = {2, 3, 4 ,5};
+
+    try{
+        std::cout<<arr3.at(3)<<std::endl;//수행 ok
+        std::cout<<arr3.at(4)<<std::endl;//std::out_of_range발생
+    }
+    catch(const std::out_of_range& ex){//예외발생(exception)_out_of_range에러를 포착
+        std::cerr<<ex.what()<<std::endl;//what()메서드를 이용해서 리턴되는 문자열 제공
+        //cout -> cin과 같은 항목을 출력하는 함수
+        //cerr -> 에러를 경고하고 콘솔에 에러를 출력하는 함수
+        //clog -> 로그내용을 기록하고 콘솔에 로그를 출력하는 함수
+    }
+    std::array<int,5> arr5={1,2,3,4,5};
+    print(arr5);
 }
