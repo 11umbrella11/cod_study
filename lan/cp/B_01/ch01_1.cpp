@@ -19,10 +19,17 @@
 #include <iostream>
 #include <array>
 
-void print(std::array<int,5> arr){
-    for(auto ele : arr)
-        std::cout<<ele<<", ";
+template <size_t N>
+//다양한 크기의 객체에대해 작동하는 범용적인 배열 출력함수를 위해 배열크기를 template로 선언
+void print(const std::array<int, N>& arr){
+    std::cout<<"원소의 갯수: "<< N <<std::endl;
 }
+/*void print(std::array<int,5> arr){
+    for(auto ele : arr)
+    //범위기반 for loop and reference: for(element : array)
+    //array의 각 요소가 반복되어 element에 복사됨
+        std::cout<<ele<<", ";
+}*/
 int main(){
 
     std::array<int,10> arr1;
@@ -50,6 +57,9 @@ int main(){
         //cerr -> 에러를 경고하고 콘솔에 에러를 출력하는 함수
         //clog -> 로그내용을 기록하고 콘솔에 로그를 출력하는 함수
     }
-    std::array<int,5> arr5={1,2,3,4,5};
+    //std::array<int,5> arr5={1,2,3,4,5};
+    //print(arr5);
+    std::array<int, 5> arr5={2,4,6,7,8};
     print(arr5);
+
 }
