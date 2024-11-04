@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/choeeunjeong/Desktop/cod_study/class/ds/review",
-      "program": "/Users/choeeunjeong/Desktop/cod_study/class/ds/review/build/Debug/outDebug"
+      "cwd": "/Users/choeeunjeong/Desktop/cod_study/lan/cp/B_01",
+      "program": "/Users/choeeunjeong/Desktop/cod_study/lan/cp/B_01/build/Debug/outDebug"
     },
     {
       "name": "C/C++: clang 활성 파일 빌드 및 디버그",

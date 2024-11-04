@@ -15,12 +15,22 @@
 
 //1-3)std::array
 //std::array는 원소의 타입과 배열의 크기를 매개변수로 사용하는 클래스 템플릿
-//#include <iostream>
-////#include <vector>//
 
+#include <iostream>
+#include <array>
 
-std::array<int, 10>arr1;
+int main(){
+
+    std::array<int,10> arr1;
 //크기가 10인 arr1을 생성
-arr1[0] = 1;
-std::cout<<"arr1 배열의 첫번째 원소: "<<arr1[0]<<std::endl;
+    arr1[0]= 1;
+    std::cout<<"arr1 배열의 첫번째 원소: "<<arr1[0]<<std::endl;
 
+    std::array<int,4> arr2 = {1, 2, 3, 4};
+    std::cout<<"arr2의 모든 원소: ";
+
+    for(int i=0;i<arr2.size();i++)
+        std::cout<<arr2[i]<<" ";
+
+    std::cout<<std::endl;
+}
