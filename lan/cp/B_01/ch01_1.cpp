@@ -61,5 +61,15 @@ int main(){
     //print(arr5);
     std::array<int, 5> arr5={2,4,6,7,8};
     print(arr5);
+    for(auto element : arr5){
+        std::cout<<element<<" ";
+        
+    }
+    std::array<int, 5> arr6={5,2,3,1,7};
+    std::cout<<std::endl;
+    for(auto it=arr6.begin();it!=arr6.end();it++){
+        auto element = (*it);
+        std::cout<<element<<" ";
+    }
 
 }
