@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stdlib.h>
+#include<stdlib.h>//라이브러리를 해야 작동함
 static void exit_handler1(void), exit_handler2(void);
 int main(int argc, char *argv[]){
     if(atexit(exit_handler1)!=0)
