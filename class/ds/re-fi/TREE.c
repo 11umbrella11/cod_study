@@ -142,4 +142,62 @@ void insert_right(struct thread_tree *parent, struct thread_tree *child)
         temp->left_child = child; // 새로운 predecessor로 변경
 } }
 
-//insert a new node as a left node of a parent
+//13.insert max_heap
+void insert_max_heap(element item, int *n)
+{
+// 노드 수가 *n인 max heap에 item 값을 추가
+    int i;
+    if (HEAP_FULL(*n)) {
+        fprintf(stderr, "The heap is full. \n");
+        exit(1);
+    }
+    i = ++(*n);
+    while ((i != 1) && (item.key > heap[i/2].key)) 
+    {
+    heap[i] = heap[i/2]; // parent의 값을 아래로 이동
+    i /= 2; // 한 레벨 위로 이동
+    }
+    heap[i] = item;
+ }
+
+ //14. delete_max_queue
+ element delete_max_heap (int *n)
+{
+    int parent, child;
+    element item, temp;
+    if (HEAP_EMPTY (*n)) 
+    {
+     fprintf(stderr, "The heap is empty\n"); 
+     exit(1); 
+     }
+     item = heap[1];
+    temp = heap[ (*n)-- ]; // 제일 마지막 원소를 비교 대상으로…
+    parent = 1; 
+    child = 2;
+     // root node부터 시작
+    while (child <= *n) 
+    {
+    if ((child < *n) && (heap[child].key < heap[child+1].key))
+        child++; // 두 개의 children 중에 큰 쪽과 비교
+    if (temp.key >= heap[child].key) break; // 더 이상 내려갈 필요없음
+    heap[parent] = heap[child]; // child의 데이터를 위로 이동
+    parent = child; // 아래로 내려가자
+    child *= 2;
+    }
+    heap[parent] = temp;
+    return item;
+}
+//15. recursive search
+
+struct node *search (struct node *root, int key)
+{
+// key를 포함하고 있는 노드의 포인터를 return
+// 해당되는 노드가 없을 경우, return NULL.
+// Recursive version
+    if (!root) return NULL;
+        if (key == root->data) return root;
+        if (key < root->data)
+            return search (root->left_child, key);
+        return search (root->right_child, key);
+}
+
