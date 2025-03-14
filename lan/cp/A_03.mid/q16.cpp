@@ -1,5 +1,5 @@
 //76. call by address 이해하기
-
+/*
 #include<iostream>
 #include<string>
 
@@ -24,10 +24,20 @@ int main(){
     return 0;
 
 };
+*/
 //출력: 
 //Call by address: 8
 //-0x7ff7bab9d35b
 //Call by reference: 1
+//-1
 
+//77. const 변수 이해하기
+///*
+#include <string>
+#include <iostream>
 
-//
+using namespace std;
+
+int main
+
+//*/
