@@ -62,12 +62,29 @@
                 <option value="분당구">분당구</option>
             </optgroup>
         </select>
+        <!--보여지는 항목 갯수 설정-->
         <select name="city" id="city" size="3">
-                <option value="강북구">강북구</option>
-                <option value="강남구">강남구</option>
-                <option value="서초구">서초구</option>
-                <option value="중원구">중원구</option>
-                <option value="분당구">분당구</option>
+            <option value="강북구">강북구</option>
+            <option value="강남구">강남구</option>
+            <option value="서초구">서초구</option>
+            <option value="중원구">중원구</option>
+            <option value="분당구">분당구</option>
+        </select>
+        <!--command(ctrl)을 누른상태로 선택하면 동시선택됨-->
+        <select name="city" id="city" multiple>
+            <option value="강북구">강북구</option>
+            <option value="강남구">강남구</option>
+            <option value="서초구">서초구</option>
+            <option value="중원구">중원구</option>
+            <option value="분당구">분당구</option>
+        </select>
+        <!--selected: 기본값 변경-->
+        <select name="city" id="city">
+            <option value="강북구">강북구</option>
+            <option value="강남구">강남구</option>
+            <option value="서초구" selected>서초구</option>
+            <option value="중원구">중원구</option>
+            <option value="분당구">분당구</option>
         </select>
     </form>
 </body>
