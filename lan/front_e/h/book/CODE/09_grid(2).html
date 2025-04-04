@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid(1)</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1500원</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td>1000원</td>
+            <td rowspan="2">1000</td>
+            <!--행 병합-->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <td>1000원</td>
+            <!--4행4열은 3행3열과 병합했으므로 생성하지않습니다.-->
+        </tr>
+        <tr>
+            <td>총 금액</td>
+            <td colspan="3">6500</td>
+            <!--열 병합-->
+            <!--5행 2열부터 열 3개를 병합했으므로 나머지행을 생성하지않음-->
+
+            <!--thead, tfoot, tbody-->
+        </tr>
+        <thead>
+            <th>...</th>
+        </thead>
+        <tfoot>
+            <td>,,,</td>
+        </tfoot>
+        <tbody>
+            <td>///</td>
+        </tbody>
+    </table>
+</body>
+</html>
