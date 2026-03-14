@@ -11,6 +11,8 @@ int main(){
 
     if((0<=scr)&&(scr<=100)){
 
+//0<=scr<=100와 같이 작성은 오류가 발생
+//연산자 우선순위나 연쇄비교에 의해서 오류가 발생 -> 끊어서 비교를 해야함
         if(90<=scr){
             cout<<"A"<<endl;
         }
@@ -27,3 +29,46 @@ int main(){
     }else
         return 0;
 }
+/*
+//자바
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+		
+		int N = Integer.parseInt(br.readLine());
+		if (N >= 90) {
+			System.out.println("A");
+		}
+		else if (N >= 80) {
+			System.out.println("B");
+		}
+		else if (N >= 70) {
+			System.out.println("C");
+		}
+		else if (N >= 60) {
+			System.out.println("D");
+		}
+		else {
+			System.out.println("F");
+		}
+	}
+}
+
+//파이썬
+A=int(input())
+if A>=90:
+    print("A")
+elif A>=80:
+    print("B")
+elif A>=70:
+    print("C")
+elif A>=60:
+    print("D")
+else:
+    print("F")
+*/
