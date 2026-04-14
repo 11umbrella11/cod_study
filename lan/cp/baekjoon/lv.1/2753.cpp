@@ -35,3 +35,56 @@ int main(){
     return 0;
 
 }
+
+/*
+//자바
+import java.util.Scanner;
+
+public class Main {
+
+    
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int year = sc.nextInt();
+
+        if (year % 4 == 0)
+
+            if (year % 100 == 0 && year % 400 == 0)
+                System.out.println('1');
+            else if (year % 100 == 0 && year % 400 != 0)
+                System.out.println('0');
+            else
+                System.out.println("1");
+        else 
+            System.out.println('0');
+
+    }
+}
+//c++ 함수버전
+#include <stdio.h>
+
+// [함수] 주소를 받아서 그 방에 있는 연도를 결과값(1 또는 0)으로 바꿔버리는 함수
+void updateToLeapResult(int *pYear) {
+    // *pYear: pYear 주소로 가서 실제 연도를 확인합니다.
+    if ((*pYear % 4 == 0 && *pYear % 100 != 0) || (*pYear % 400 == 0)) {
+        *pYear = 1; // 윤년이면 해당 주소의 값을 1로 변경
+    } else {
+        *pYear = 0; // 아니면 0으로 변경
+    }
+}
+
+int main() {
+    int y;
+    scanf("%d", &y);
+
+    // y의 '주소(&)'를 넘겨주어 함수가 직접 값을 고치게 합니다.
+    updateToLeapResult(&y);
+
+    // 함수 실행 후 y 자체가 결과값으로 변해있습니다.
+    printf("%d\n", y);
+    return 0;
+}
+*/
