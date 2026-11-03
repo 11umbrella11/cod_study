@@ -7,7 +7,7 @@ public class JFrameEx extends JFrame{
     setDefaultCloseOperation(EXIT_ON_CLOSE);
     Container c = getContentPane();
     c.setBackground(Coloe.ORANGE);
-    c.setLayout(new FlowLayout());
+    c.setLayout(new FlowLayout(FlowLayout.RIGHT, 50, 60));
   
     c.add(new JButton("확인"));
     c.add(new JButton("취소"));
